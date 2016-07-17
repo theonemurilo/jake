@@ -35,3 +35,4 @@
 # node_modules and bower_components should be downloaded locally
 /node_modules
 /jake-ui/app/bower_components
+/jake-ui/app/styles/theme/
