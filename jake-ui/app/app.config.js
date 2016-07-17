@@ -7,7 +7,9 @@ function basicRouteConfig($stateProvider, $urlRouterProvider) {
         abstract: true,
         views: {
             'header@': {
-                templateUrl: 'scripts/header/header.tpl.html'
+                templateUrl: 'scripts/header/header.tpl.html',
+                controller: 'HeaderController',
+                controllerAs: 'ctrl'
             },
             'footer@': {
                 templateUrl: 'scripts/footer/footer.tpl.html'
