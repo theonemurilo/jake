@@ -1,11 +1,14 @@
-<div class="home" style="height: 500px; background: #AAA">
-    
-    <div class="text-center user-tmp">
-        <input type="text" 
-            name="username"
-            ng-model="ctrl.user.name"/>
-        <button ng-click="ctrl.login()">Log me in!</button>
+<div class="home col-md-12" style="height: 500px; background: #AAA">
+        
+    <div class="space-20"></div>
+    <div>
+        <span ng-repeat="punch in ctrl.punchList track by $index">
+            <input class="punch" type="text" ng-model="punch"/>
+        </span>
+        
+        
+       <a href="#" ng-click="ctrl.addPunch()">
+           <span class="icon glyphicon glyphicon-plus" aria-hidden="true"></span>
+       </a>
     </div>
-    
-    
 </div>

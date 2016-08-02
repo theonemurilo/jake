@@ -12,6 +12,10 @@ function HomeController($scope, AuthService) {
         AuthService.login(ctrl.user);
     }
     
+    function addPunch() {
+        ctrl.punchList.push("00:00");
+    }
+    
     
     function _init() {
         
@@ -19,8 +23,10 @@ function HomeController($scope, AuthService) {
     
     ctrl.user = {};
     ctrl.user.name = 'jake@jake.com';
+    ctrl.punchList = [];
     
     ctrl.login = login;
+    ctrl.addPunch = addPunch;
     
     _init();
 }

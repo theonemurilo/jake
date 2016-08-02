@@ -12,7 +12,6 @@ function AuthService (NotifierService) {
     }
     
     function currentUser() {
-        console.log(user);
         return user;
     }
     
