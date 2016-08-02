@@ -1,0 +1,6 @@
+{
+  "globals": {
+    "angular": 1,
+    "no-underscore-dangle": 0
+  }
+}

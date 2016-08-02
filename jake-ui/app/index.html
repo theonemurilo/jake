@@ -1,0 +1,57 @@
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Jake!</title>
+  
+  <!-- BOWER COMPONENTS -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/lodash/dist/lodash.js"></script>
+  <script src="bower_components/restangular/dist/restangular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  
+  <!-- STYLES -->
+  <link rel="stylesheet" href="/styles/theme/main.css"></link>
+  
+  <!-- APP CONFIG -->
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  
+  <!-- SERVICES -->
+  <script type="text/javascript" src="./scripts/services/auth.service.js"></script>
+  <script type="text/javascript" src="./scripts/services/notifier.service.js"></script>
+  
+  <!-- DIRECTIVES -->
+  <!--<script type="text/javascript" src="./scripts/components/timesheet.directive.js"></script>-->
+  
+  <!-- HEADER -->
+  <script src="./scripts/header/header.controller.js"></script>
+  
+  <!-- HOME -->
+  <script src="./scripts/home/home.controller.js"></script>
+  <script src="./scripts/home/home.routes.js"></script>
+  
+  
+</head>
+
+<body>
+    <header>
+        <div ui-view="header"></div>
+    </header>
+    
+    <div class="container">
+        <div ui-view="container">
+        </div>
+    </div>
+    
+    <footer ui-view="footer">
+    </footer>
+
+</body>
+
+</html>
