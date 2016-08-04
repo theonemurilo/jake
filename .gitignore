@@ -32,6 +32,9 @@
 # "temporary" build files
 /target
 
-.classpath
-.project
-.settings
+jake-service/.classpath
+jake-service/.project
+jake-service/.settings
+jake-service/target/*
+/jake-service/target
+.settings/*
