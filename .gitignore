@@ -36,3 +36,9 @@
 /node_modules
 /jake-ui/app/bower_components
 /jake-ui/app/styles/theme/
+/jake-service/.classpath
+/jake-service/.project
+/jake-service/.settings
+/jake-service/target/*
+/jake-service/target
+.settings/*
