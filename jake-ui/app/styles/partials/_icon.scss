@@ -1,0 +1,8 @@
+.icon {
+    color: $icon-font-color;
+    
+    &:hover{
+        cursor: pointer;
+        color: $icon-font-color-hover;
+    }
+}

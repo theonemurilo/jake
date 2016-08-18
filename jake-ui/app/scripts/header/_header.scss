@@ -3,6 +3,22 @@
         line-height: 3em;
     }
     
+    .month-selection {
+        display: inline-block;
+        padding-top: 0.5em;
+        
+        .icon {
+            padding: 0;
+        }
+        
+        .month {
+            display: inline-block;
+            top: 0px;
+            margin: 0px;
+            padding: 0 2em;
+        }
+    }
+    
     .welcome {
         line-height: 3em;
         padding-right: 3em;

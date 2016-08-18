@@ -1,14 +1,30 @@
-<div class="home col-md-12" style="height: 500px; background: #AAA">
+<div class="home col-md-12">
+    <div class="space-10"></div>
+    
+    <table class="table">
+        <tr class="header">
+            <td>
+                <span class="content">Day</span>
+            </td>
+            <td ng-repeat="inOut in ctrl.getNumber(ctrl.headerLength) track by $index">
+                <span ng-if="ctrl.isNumberEven($index)" class="content">In</span>
+                <span ng-if="!ctrl.isNumberEven($index)" class="content">Out</span>
+            </td>
+        </tr>
         
-    <div class="space-20"></div>
-    <div>
-        <span ng-repeat="punch in ctrl.punchList track by $index">
-            <input class="punch" type="text" ng-model="punch"/>
-        </span>
-        
-        
-       <a href="#" ng-click="ctrl.addPunch()">
-           <span class="icon glyphicon glyphicon-plus" aria-hidden="true"></span>
-       </a>
-    </div>
+        <tr class="body"  ng-repeat="day in ctrl.monthlyPunch">
+            <td>
+                 <span>{{$index + 1 | zeroPadding}} - </span>
+            </td>
+            <td ng-repeat="punch in day track by $index">
+                 <input class="punch" type="text" ng-model="punch"/>
+            </td>
+            <td>
+                <a ng-click="ctrl.addPunch($index)">
+                    <span class="icon glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </a>
+            </td>
+        </tr>
+    </table>
+    
 </div>

@@ -1,11 +1,24 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="pull-left jake">
-            <span class="jake">Jake!</span>
+        <div class="col-md-4">
+            <div class="jake">
+                <span class="jake">Jake!</span>
+            </div>
         </div>
-        <div class="pull-right">
-            <span class="welcome">Welcome, {{ctrl.user.name}}!</span>
-            <span class="change"><a ng-click="ctrl.openModal()">(change)</a></span>
+        <div class="col-md-4 text-center">
+            <div class="month-selection">
+                <h5 class="icon glyphicon glyphicon-chevron-left" aria-hidden="true"></h5>
+                <h3 class="month">August</h3>
+                <h5 class="icon glyphicon glyphicon-chevron-right" aria-hidden="true"></h5>
+            </div>
         </div>
+        <div class="col-md-4">
+            <div class="pull-right">
+                <span class="welcome">Welcome, {{ctrl.user.name}}!</span>
+                <span class="change"><a ng-click="ctrl.openModal()">(change)</a></span>
+            </div>
+        </div>
+        
     </div>
+    
 </nav>
