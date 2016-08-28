@@ -1,44 +1,7 @@
-# .gitignore for Grails 1.2 and 1.3
-# Although this should work for most versions of grails, it is
-# suggested that you use the "grails integrate-with --git" command
-# to generate your .gitignore file.
-
-# web application files
-/web-app/WEB-INF/classes
-
-# default HSQL database files for production mode
-/prodDb.*
-
-# general HSQL database files
-*Db.properties
-*Db.script
-
-# logs
-/stacktrace.log
-/test/reports
-/logs
-
-# project release file
-/*.war
-
-# plugin release files
-/*.zip
-/plugin.xml
-
-# older plugin install locations
-/plugins
-/web-app/plugins
-
-# "temporary" build files
-/target
-
-# node_modules and bower_components should be downloaded locally
-/node_modules
-/jake-ui/app/bower_components
-/jake-ui/app/styles/theme/
+/jake-ui/node_modules/**/*
+/jake-ui/app/bower_components/**/*
+/jake-ui/app/styles/theme/**/*.css
 /jake-service/.classpath
 /jake-service/.project
-/jake-service/.settings
-/jake-service/target/*
-/jake-service/target
-.settings/*
+/jake-service/.settings/**/*
+/jake-service/target/**/*
